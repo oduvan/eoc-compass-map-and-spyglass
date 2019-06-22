@@ -1,0 +1,26 @@
+
+export function navigation(a) {
+
+    // your code here
+    return undefined;
+}
+
+import * as assert from 'assert';
+console.log('Example:');
+console.log(navigation([['Y', 0, 0, 0, 'C'],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ ['M', 0, 0, 0, 'S']]));
+
+// These "asserts" are used for self-checking
+assert.equal(navigation([['Y', 0, 0, 0, 'C'],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ ['M', 0, 0, 0, 'S']]), 11);
+assert.equal(navigation([['Y', 'S', 0, 0, 0],
+ ['C', 'M', 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0]]), 3);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+    

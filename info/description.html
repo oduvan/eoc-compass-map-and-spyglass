@@ -1,0 +1,63 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}compass.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+It would seem that it’s a short, brief journey, which should take less than one day - what could go wrong? And yet, when the island was already visible on the horizon, suddenly, a terrible storm began! It’s really hard to put into words what you and your men went through. Actually… You were the sole survivor who’ve made it to the island alive - the huge waves destroyed both ships, and what’s left from their hulls was finally shattered by the sea-cliff. Perhaps, someone else from your crew has managed to survive, but it was very unlikely. Now you are facing 2 tasks - to take the Hypercube from the castle and find a way off from this damned island.<br>
+<br>
+Let's just take things one step at a time. For starters, you need to find a compass, map and spyglass to navigate the terrain. Hurry up! The nature is very unpredictable and if you don’t pick up those things in time, they will be absorbed by the coastal sand or washed away into the sea.
+</div>
+
+<p>
+Your task is to count the sum of the number of steps required to pick up all 3 items - ('C' - compass), ('M' - map), ('S' - spyglass) from your starting position. So the result will be the sum of distance from Y to C, from Y to M and from Y to S (not Y-C-M-S).<br>
+Note that you can walk in 8 directions - left, right, up, down and sideways (on the diagonal in any direction). Your starting position is 'Y'.
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}distances.jpg" style="max-height: 200px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Array with the objects placements.
+</p>
+
+<p>
+    <strong>Output: </strong> The length of the path.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+navigation([['Y', 0, 0, 0, 'C'],
+            [ 0,  0, 0, 0,  0],
+            [ 0,  0, 0, 0,  0],
+            ['M', 0, 0, 0, 'S']]) == 11 //4 steps from Y to C, 4 from Y to S and 3 from Y to M
+</pre>
+{% else %}
+<pre class="brush: python">
+navigation([['Y', 0, 0, 0, 'C'],
+            [ 0,  0, 0, 0,  0],
+            [ 0,  0, 0, 0,  0],
+            ['M', 0, 0, 0, 'S']]) == 11 #4 steps from Y to C, 4 from Y to S and 3 from Y to M
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For the finding the length of the path.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    3x2 <= array size <= 10x10
+</p>

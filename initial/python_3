@@ -1,0 +1,22 @@
+def navigation(a):
+    # your code here
+    return None
+
+
+if __name__ == '__main__':
+    print("Example:")
+    print(navigation([['Y', 0, 0, 0, 'C'],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ ['M', 0, 0, 0, 'S']]))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert navigation([['Y', 0, 0, 0, 'C'],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ ['M', 0, 0, 0, 'S']]) == 11
+    assert navigation([['Y', 'S', 0, 0, 0],
+ ['C', 'M', 0, 0, 0],
+ [0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0]]) == 3
+    print("Coding complete? Click 'Check' to earn cool rewards!")
